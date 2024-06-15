@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnical Documentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+       
+      <ul id="style-ul" class="sticky">
+        <li class="lil"><a class="al active-menu" href="#">HOME</a></li>
+        <li class="lil"><a class="al"  href="#">ABOUT</a></li>
+        <li class="lil"><a class="al"  href="#">CONTACT</a></li>
+      </ul>
+     
+     
+  
+    <main id="main-doc">
+      <header >
+        <h1 class="principal">JavaScript Technical Documentation</h1>
+      </header>
+      <nav id="navbar">
+        <ul>
+          <li class="active"><a class="active-title" class="nav-link " href="#Introduction">Introduction</a></li>
+          <li>
+            <a class="nav-link" href="#What_you_should_already_know"
+              >What you should already know</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#JavaScript_and_Java"
+              >JavaScript and Java</a
+            >
+          </li>
+          <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+          <li><a class="nav-link" href="#Variables">Variables</a></li>
+          <li><a class="nav-link" href="#Data_types">Data types</a></li>
+          <li><a class="nav-link" href="#Operators">Operators</a></li>
+          <li><a class="nav-link" href="#Functions">Functions</a></li>
+          <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+            <li><a class="nav-link" href="#Loops">Loops</a></li>
+            <li><a class="nav-link" href="#Comments">Comments</a></li>
+            <li><a class="nav-link" href="#Strict_mode">Strict mode</a></li>
+            <li><a class="nav-link" href="#Classes">Classes</a></li>
+            <li><a class="nav-link" href="#Modules">Modules</a></li>
+        </ul>
+      </nav>
+      <section class="main-section" id="Introduction">
+        <header class="Subtitles">Introduction</header>
+        <article>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language.
+            It is a small and lightweight language. Inside a host environment
+            (for example, a web browser), JavaScript can be connected to the
+            objects of its environment to provide programmatic control over
+            them.
+          </p>
+          <p>
+            JavaScript contains a standard library of objects, such as Array,
+            Date, and Math, and a core set of language elements such as
+            operators, control structures, and statements. Core JavaScript can
+            be extended for a variety of purposes by supplementing it with
+            additional objects; for example:
+          </p>
+          <ul>
+            <li>
+              Client-side JavaScript extends the core language by supplying
+              objects to control a browser and its Document Object Model (DOM).
+              For example, client-side extensions allow an application to place
+              elements on an HTML form and respond to user events such as mouse
+              clicks, form input, and page navigation.
+            </li>
+            <li>
+              Server-side JavaScript extends the core language by supplying
+              objects relevant to running JavaScript on a server. For example,
+              server-side extensions allow an application to communicate with a
+              database, provide continuity of information from one invocation to
+              another of the application, or perform file manipulations on a
+              server.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="What_you_should_already_know">
+        <header class="Subtitles">What you should already know</header>
+        <article>
+          <p>This guide assumes you have the following basic background:</p>
+          <ul>
+            <li>
+              A general understanding of the Internet and the World Wide Web
+              (WWW).
+            </li>
+            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <li>
+              Some programming experience. If you are new to programming, try
+              one of the tutorials linked on the main page about JavaScript.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="JavaScript_and_Java">
+        <header class="Subtitles">JavaScript and Java</header>
+        <article>
+          <p>
+            JavaScript and Java are similar in some ways but fundamentally
+            different in some others. The JavaScript language resembles Java but
+            does not have Java's static typing and strong type checking.
+            JavaScript follows most Java expression syntax, naming conventions
+            and basic control-flow constructs which was the reason why it was
+            renamed from LiveScript to JavaScript.
+          </p>
+          <p>
+            In contrast to Java's compile-time system of classes built by
+            declarations, JavaScript supports a runtime system based on a small
+            number of data types representing numeric, Boolean, and string
+            values. JavaScript has a prototype-based object model instead of the
+            more common class-based object model. The prototype-based model
+            provides dynamic inheritance; that is, what is inherited can vary
+            for individual objects. JavaScript also supports functions without
+            any special declarative requirements. Functions can be properties of
+            objects, executing as loosely typed methods.
+          </p>
+          <p>
+            JavaScript is a very free-form language compared to Java. You do not
+            have to declare all variables, classes, and methods. You do not have
+            to be concerned with whether methods are public, private, or
+            protected, and you do not have to implement interfaces. Variables,
+            parameters, and function return types are not explicitly typed.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_world">
+        <header class="Subtitles">Hello world</header>
+        <article>
+          <p>
+            To get started with writing JavaScript, open the Scratchpad and
+            write your first "Hello world" JavaScript code:
+          </p>
+          
+            
+                    <code>
+                        function greetMe(yourName) {
+                            alert("Hello " + yourName);
+                        }
+                        greetMe("World");
+                    </code>
+                
+          
+         
+          <p>
+            When the above code is executed, it will produce the following
+            result:
+          </p>
+          <img src="./images/hello_world.png" alt="Hello world" />
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header class="Subtitles">Variables</header>
+
+        <article>
+          <p>Variables are containers for storing data values.</p>
+
+          <p>
+            In this example, x, y, and z, are variables, declared with the var
+            keyword:
+          </p>
+          
+           
+              <code>
+                  var x = 5;
+                  var y = 6;
+                  var z = x + y;
+              </code>
+         
+
+         
+         
+
+          <p>
+            JavaScript uses the <code>var</code> keyword to declare variables.
+          </p>
+
+          <p>
+            After the declaration, variables are
+            <strong>automatically initialized</strong> with a default value:
+            <code>undefined</code>.
+          </p>
+
+          <p>
+            It is possible to assign a value to more than one variable in one
+            statement:
+          </p>
+          
+            
+              <code>
+                  var x = 5, y = 6, z = 7;
+              </code>
+         
+         
+          
+
+          <p>
+            Variables can also be declared without a value. In this case, the
+            variable will be <strong>automatically initialized</strong> with a
+            default value: <code>undefined</code>.
+          </p>
+          
+            
+              <code>
+                  var x;
+                  var y;
+              </code>
+         
+          
+          
+
+          <p>
+            JavaScript uses the <code>let</code> keyword to declare variables.
+          </p>
+
+          <p>
+            After the declaration, variables are
+            <strong>automatically initialized</strong> with a default value:
+            <code>undefined</code>.
+          </p>
+
+          <p>
+            It is possible to assign a value to more than one variable in one
+            statement:
+          </p>
+          
+            
+              <code>
+                  let x = 5, y = 6, z = 7;
+              </code>
+         
+
+          
+          
+          <p>
+            Variables can also be declared without a value. In this case, the
+            variable will be <strong>automatically initialized</strong> with a
+            default value: <code>undefined</code>.
+          </p>
+          
+            
+              <code>
+                  let x;
+                  let y;
+              </code>
+          
+
+          
+          
+          <p>
+            JavaScript uses the <code>const</code> keyword to declare variables.
+          </p>
+
+          <p>
+            After the declaration, variables are
+            <strong>automatically initialized</strong> with a default value:
+            <code>undefined</code>.
+          </p>
+
+          <p>
+            It is possible to assign a value to more than one variable in one
+            statement:
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Data_types">
+        <header class="Subtitles">Data types</header>
+        <article>
+          <p>
+            JavaScript variables can hold many data types: numbers, strings,
+            objects and more:
+          </p>
+          
+            
+              <code>
+                  var length = 16;                               // Number
+                  var lastName = "Johnson";                      // String
+                  var x = {firstName:"John", lastName:"Doe"};    // Object
+              </code>
+         
+
+         
+          
+          <p>
+            JavaScript variables do not need to be de clared with any particular
+            type, and can even change type after they are declared:
+          </p>
+         
+            
+              <code>
+                  var x;               // Now x is undefined
+                  x = 5;               // Now x is a Number
+                  x = "John";          // Now x is a String
+              </code>
+       
+
+         
+          
+          <p>
+            JavaScript is a <strong>dynamic</strong> language. This means that
+            not only can the type of a variable change, but also that a variable
+            can be used without first being declared.
+          </p>
+          <p>
+            In the example below, x is declared, then y is assigned the value of
+            x, and then x is assigned a new value:
+          </p>
+          
+            
+              <code>
+                  var x;               // Now x is undefined
+                  x = 5;               // Now x is a Number
+                  x = "John";          // Now x is a String
+              </code>
+       
+
+          
+          
+          <p>
+            JavaScript uses the <code>typeof</code> operator to find the type of
+            a JavaScript variable.
+          </p>
+          <p>The following example returns the type of a variable:</p>
+          
+          
+            <code>
+                var x = 5;
+                var y = "John";
+                var z = {firstName:"John", lastName:"Doe"};
+                document.getElementById("demo").innerHTML =
+                typeof x + "<br>" + typeof y + "<br>" + typeof z;
+            </code>
+        
+      
+        
+        
+            <code>
+                var x = 5;
+                var y = "John";
+                var z = {firstName:"John", lastName:"Doe"};
+                document.getElementById("demo").innerHTML =
+                typeof x + "<br>" + typeof y + "<br>" + typeof z;
+            </code>
+       
+
+          
+          <p>
+            When the above code is executed, it will produce the following
+            result:
+          </p>
+          <img src="./images/typeof.png" alt="typeof" />
+        </article>
+      </section>
+      <section class="main-section" id="Operators">
+        <header class="Subtitles">Operators</header>
+        <article>
+          <p>
+            JavaScript has the following types of operators. This section
+            describes the operators and contains information about operator
+            precedence.
+          </p>
+          <ul>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Arithmetic operators</li>
+            <li>Bitwise operators</li>
+            <li>Logical operators</li>
+            <li>String operators</li>
+            <li>Conditional (ternary) operator</li>
+            <li>Comma operator</li>
+            <li>Unary operators</li>
+            <li>Relational operators</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header class="Subtitles">Function</header>
+        <article>
+          <p>
+            A JavaScript function is a block of code designed to perform a
+            particular task.
+          </p>
+          <p>
+            A JavaScript function is executed when "something" invokes it (calls
+            it).
+          </p>
+          <p>Example</p>
+          
+           
+              <code>
+                  function myFunction(p1, p2) {
+                      return p1 * p2;   
+                  }
+              </code>
+        
+
+        
+          
+          <p>
+            When the above code is executed, it will produce the following
+            result:
+          </p>
+          <img src="./images/function.png" alt="function" />
+        </article>
+      </section>
+      <section class="main-section" id="Conditionals">
+        <header class="Subtitles">Conditionals</header>
+        <article>
+          <p>
+            JavaScript supports the following conditional statements. Use these
+            to specify a block of code to be executed, if a specified condition
+            is true.
+          </p>
+          <ul>
+            <li>if statement</li>
+            <li>if...else statement</li>
+            <li>if...else if...else statement</li>
+            <li>switch statement</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script>
+      windows.onscroll = function () {
+        myFunction();
+      };
+      let navbar = document.getElementById("style-ul");
+      let sticky = navbar.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
